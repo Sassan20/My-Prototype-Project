@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+  </head>
+  <style>
+    body {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+    .form-control {
+      padding-left: 10px;
+      width: 500px;
+      height: 35px;
+      margin: 10px 25px;
+      font-size: 20px;
+      display: flex;
+      border: 1px solid rgba(194, 191, 191, 0.623);
+      border-radius: 5px;
+      flex-direction: column;
+    }
+    .form-label {
+      font-size: 25px;
+      margin-left: 25px;
+    }
+    .btn {
+      width: 110px;
+      height: 40px;
+      border: 1px solid blue;
+      border-radius: 5px;
+      margin: 10px 40px;
+      background-color: blue;
+      color: white;
+    }
+    .btn:hover {
+      box-shadow: 0px 0px 0px 5px rgba(88, 125, 243, 0.829);
+      transition: 0.2s;
+    }
+    .alert {
+        font-size: 20px;
+        padding: 5px;
+        width: 400px;
+        border: 1px solid red;
+        border-radius: 5px;
+        margin: 10px 20px;
+        background-color: rgba(255, 0, 0, 0.521);
+        color: white;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+  </style>
+  <body>
+    <div class="container" style="margin-left: 30px">
+      <div class="row">
+        <div class="col">
+          <h2 style="font-size: 30px"><%= title %></h2>
+
+          <% if (typeof errors != 'undefined' ) { %>
+          <div class="alert" role="alert">
+            <ul>
+              <% errors.forEach( e => { %>
+              <li><%= e.msg %></li>
+              <% }) %>
+            </ul>
+          </div>
+          <% } %>
+
+          <form method="post" action="/contact">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nama"
+                name="nama"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="nama" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="noHP" class="form-label">No HP</label>
+              <input
+                type="text"
+                class="form-control"
+                id="noHP"
+                name="noHP"
+                required
+              />
+            </div>
+            <button type="submit" class="btn">Tambah Data</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

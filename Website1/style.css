@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: calibri;
+  background-color: rgb(245, 245, 245);
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  width: 80%;
+  margin: 120px auto;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-areas:
+    'nav nav'
+    'image image'
+    'article article'
+}
+
+footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-areas:
+    'teks teks'
+    'article nav'
+    'copy sosmed'
+}
+
+section {
+  width: 60%;
+  margin: 100px auto;
+}
+
+main {
+  width: 60%;
+  margin: 150px auto;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.menu li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: rgb(71, 69, 69);
+  padding: 6px;
+  border-radius: 2px;
+}
+
+.menu li a:hover{
+  color: rgb(113, 113, 230);
+}
+
+.menu-footer {
+  width: 600px;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-footer li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu-footer li a {
+  text-decoration: none;
+  color: rgb(71, 69, 69);
+  padding: 6px;
+  border-radius: 2px;
+}
+
+.menu-footer li a:hover{
+  color: rgb(113, 113, 230);
+}
+
+article h1 {
+  font-size: 40px;
+  color: rgb(54, 54, 54);
+  padding-left: 10px;
+}
+
+article {
+  grid-area: article;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  grid-area: image;
+  border-radius: 50%;
+  margin: 50px auto;
+}
+
+section h1 {
+  padding-top: 30px;
+  font-weight: normal;
+  color: rgb(49, 49, 49);
+}
+
+main h1 {
+  padding-top: 30px;
+  font-weight: normal;
+  color: rgb(49, 49, 49);
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(197, 196, 196, 0.89);
+}
+
+.card1 {
+  display: flex;
+}
+
+.write,
+h1,
+.card {
+  font-family: calibri;
+}
+
+.Write:hover {
+  background-color: rgba(202, 198, 198, 0.781);
+  border-radius: 3px;
+}
+
+.card h3,
+h4 {
+  font-weight: normal;
+  color: rgb(85, 83, 83);
+}
+
+.judul {
+  display: flex;
+  line-height: 50px;
+  margin: 10px 0px;
+  font-family: calibri;
+}
+
+.icon {
+  text-align: center;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.301);
+  border-radius: 50%;
+}
+
+footer {
+  padding-top: 30px;
+  text-align: center;
+  background-color: rgba(204, 203, 203, 0.849);
+}
+
+.teks {
+  grid-area: teks;
+}
+
+.teks h1,
+h3 {
+  font-weight: normal;
+}
+
+.nav-footer {
+  grid-area: nav;
+  margin: 60px;
+}
+
+.btn {
+  grid-area: teks;
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(125, 125, 126);
+  color: white;
+  font-size: 30px;
+}
+
+.copyright {
+  grid-area: copy;
+  display: flex;
+  padding: 70px 130px;
+  font-family: monospace;
+}
+
+.sosmed {
+  grid-area: sosmed;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 48px;
+  padding-right: 150px;
+}
+
+.list-sosmed {
+  display: flex;
+  list-style-type: none;
+}
+
+.list-sosmed li {
+  padding: 10px 20px;
+}
+
+.list-sosmed li:hover {
+  transform: translateY(-10px);
+  transition: .4s;
+  cursor: pointer;
+}

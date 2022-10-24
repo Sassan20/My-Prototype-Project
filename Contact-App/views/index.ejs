@@ -1,0 +1,11 @@
+<div class="container">
+  <h4>Daftar Mahasiswa</h4>
+  <% if (mhs.length < 1) { %>
+  <p>Data Mahasiswa Kosong</p>
+  <% } else { %> <% mhs.forEach(m => { %>
+  <ul>
+    <li>Nama : <%= m.nama %></li>
+    <li>Email : <%= m.email %></li>
+  </ul>
+  <% }) %> <% } %>
+</div>
