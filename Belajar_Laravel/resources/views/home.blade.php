@@ -1,5 +1,5 @@
 <x-app-layout>
-<section id="about">
+    <section id="about">
         <div class="container">
             <div class="row text-center mb-3 mt-3">
                 <div class="col">
