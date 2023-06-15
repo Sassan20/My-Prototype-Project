@@ -19,7 +19,7 @@
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item mx-5">
-                    <a class="nav-link active" href="{{ url('./login.blade.php') }}">LOGIN</a>
+                    <a class="nav-link active" href="/login">LOGIN</a>
                 </li>
             </ul>
         </div>
