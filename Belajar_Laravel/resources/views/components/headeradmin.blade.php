@@ -21,7 +21,7 @@
       </ul>
             <ul class="navbar-nav">
                 <li class="nav-item mx-5">
-                    <a class="nav-link active" href="/login">LOGIN</a>
+                    <a class="nav-link active" href="/logout">LOGIN</a>
                 </li>
             </ul>
         </div>

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <x-header />
+    <x-headeradmin />
     {{ $slot }}
     <x-footer />
 
