@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#ffd700; opacity: 0.5;">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#ffd700;">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -21,7 +21,7 @@
       </ul>
             <ul class="navbar-nav">
                 <li class="nav-item mx-5">
-                    <a class="nav-link active" href="/logout">LOGIN</a>
+                    <a class="nav-link active" href="/login">LOGIN</a>
                 </li>
             </ul>
         </div>

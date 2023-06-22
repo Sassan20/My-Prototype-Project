@@ -17,8 +17,8 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Login</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Login to your Account</h6>
+                        <h2 class="card-title text-center">Login</h2>
+                        <h6 class="card-subtitle mb-2 text-dark">Login to your Account</h6>
                         <form action="" method="post">
                             @csrf
                             <div class="mb-4">
@@ -29,8 +29,9 @@
                                 <label for="Password" class="form-label">Password</label>
                                 <input type="Password" name="Password" id="Password" class="form-control">
                             </div>
-                            <button type="submit" class="btn btn-bg-primary">Login</button>
+                            <button type="submit" class="btn btn-primary">Login</button>
                         </form>
+                        </div>
                     </div>
                 </div>
             </div>

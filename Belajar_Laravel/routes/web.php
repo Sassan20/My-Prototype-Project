@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/login', function () {
-    return view('auth.login');
+Route::get('/login', [LoginController::class, 'showLogin'])->name('Login');
+Route::post('/login', [LoginController::class, 'cekLogin'])->name('Login');
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
 });

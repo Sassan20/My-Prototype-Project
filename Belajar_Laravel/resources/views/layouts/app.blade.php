@@ -12,6 +12,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Belajar Laravel</title>
 </head>
+<style>
+    .jumbotron {
+        padding: 1px;
+        background-color: #ffd700;
+        opacity: 0.5;
+    }
+
+    section {
+        padding-top: 4rem;
+    }
+</style>
 
 <body>
     <x-header />

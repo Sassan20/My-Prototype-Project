@@ -16,7 +16,6 @@
 <body>
     <x-headeradmin />
     {{ $slot }}
-    <x-footer />
 
     <!-- Optional JavaScript; choose one of the two! -->
 
