@@ -19,7 +19,7 @@
                     <div class="card-body">
                         <h2 class="card-title text-center">Login</h2>
                         <h6 class="card-subtitle mb-2 text-dark">Login to your Account</h6>
-                        <form action="" method="post">
+                        <form action="{{ route('Login') }}" method="post">
                             @csrf
                             <div class="mb-4">
                                 <label for="email" class="form-label">Email</label>
